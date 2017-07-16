@@ -90,9 +90,8 @@ hr {
           color: lightblue;
           padding: 10px 0; }
     .jumbotron .nav-container .overlay .language {
-      padding-left: 40px;
-      position: absolute;
-      bottom: 20px; }
+      margin-top: 20px;
+      padding-left: 40px; }
       .jumbotron .nav-container .overlay .language img {
         width: 40px;
         height: auto;
@@ -308,8 +307,6 @@ hr {
     width: 300px; }
   .jumbotron .nav-container .overlay ul {
     margin-top: 20px; }
-  .jumbotron .nav-container .overlay .language {
-    right: 20px; }
   #hamb-menu {
     background: white;
     box-shadow: 0 0 10px 10px white; }
