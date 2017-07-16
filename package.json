@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_page",
+  "version": "1.0.0",
+  "description": "portfolio_page_project",
+  "main": "portfolio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomasz Głodkowski",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-rallycoding": "^3.2.0",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  },
+  "dependencies": {
+    "aos": "^2.1.1"
+  }
+}

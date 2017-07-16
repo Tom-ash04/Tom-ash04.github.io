@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:800");
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+body {
+  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif; }
+
+section {
+  margin: 120px 100px; }
+
+h1 {
+  color: #2a2727; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1900px; }
+  .container h1 {
+    font-family: "Work Sans", sans-serif; }
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px; }
+
+img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover; }
+
+hr {
+  width: 100%;
+  height: 5px;
+  background: #0066c1;
+  border: none;
+  margin: 20px 0 120px;
+  transition: width 2s ease; }
+
+.jumbotron {
+  background: url("https://static.pexels.com/photos/196254/pexels-photo-196254.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1900px;
+  max-width: 1900px;
+  height: 100vh;
+  margin: 0 auto; }
+  .jumbotron h1 {
+    color: rgba(255, 255, 255, 0);
+    font-size: 50px;
+    width: 55%;
+    transition: color 3s ease, text-shadow 3s ease;
+    padding: 10% 5%; }
+    .jumbotron h1 span.span-one {
+      color: rgba(255, 255, 255, 0);
+      transition: color 3s ease, text-shadow 3s ease;
+      animation: breath 10s infinite;
+      animation-delay: 5s; }
+    .jumbotron h1 span.span-two {
+      color: rgba(255, 255, 255, 0);
+      transition: color 3s ease, text-shadow 3s ease;
+      animation: breath 10s infinite;
+      animation-delay: 10s; }
+  .jumbotron .nav-container .overlay {
+    position: fixed;
+    right: 0%;
+    top: 0;
+    background: linear-gradient(-90deg, rgba(0, 102, 193, 0.5), #0066c1);
+    width: 0%;
+    height: 100vh;
+    transition: .5s ease;
+    z-index: 100; }
+    .jumbotron .nav-container .overlay ul {
+      list-style-type: none;
+      font-size: 30px;
+      margin-top: 70px;
+      text-align: left; }
+      .jumbotron .nav-container .overlay ul li a {
+        display: block;
+        height: 100%;
+        padding: 10px 0 10px 5px;
+        transition: .5s ease;
+        text-decoration: none;
+        color: white;
+        cursor: pointer; }
+        .jumbotron .nav-container .overlay ul li a:hover {
+          color: lightblue;
+          padding: 10px 0; }
+    .jumbotron .nav-container .overlay .language {
+      padding-left: 40px;
+      position: absolute;
+      bottom: 20px; }
+      .jumbotron .nav-container .overlay .language img {
+        width: 40px;
+        height: auto;
+        cursor: pointer;
+        transition: transform .5s ease; }
+        .jumbotron .nav-container .overlay .language img:hover {
+          transform: scale(1.2); }
+  .jumbotron .nav-container #hamb-menu {
+    position: fixed;
+    top: 5%;
+    right: 3%;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    transition: .5s ease; }
+    .jumbotron .nav-container #hamb-menu:hover {
+      opacity: .5; }
+    .jumbotron .nav-container #hamb-menu span {
+      height: 5px;
+      width: 35px;
+      background: #0066c1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: .5s ease; }
+    .jumbotron .nav-container #hamb-menu .middle {
+      top: 10px; }
+    .jumbotron .nav-container #hamb-menu .bottom {
+      top: 20px; }
+  .jumbotron .scroll-down {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    bottom: 20px; }
+    .jumbotron .scroll-down a i {
+      color: white;
+      text-decoration: none;
+      font-size: 60px;
+      animation: drop 3s infinite;
+      cursor: pointer; }
+
+.project-info {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: rgba(0, 102, 193, 0);
+  width: 100%;
+  height: 100%;
+  transition: .5s ease; }
+  .project-info h1 {
+    color: transparent;
+    margin: 0 0 30px 0;
+    transition: .5s ease; }
+  .project-info p {
+    color: transparent;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: .5s ease;
+    font-weight: bold; }
+  .project-info a {
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    color: transparent;
+    margin: 20px 0;
+    border: 2px solid transparent;
+    padding: 5px 0;
+    display: inline-block;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: .5s ease; }
+    .project-info a:hover {
+      transform: scale(1.1);
+      color: blue; }
+    .project-info a i {
+      font-size: 80px; }
+  .project-info a.git {
+    border: none;
+    border-radius: none;
+    width: initial;
+    transition: .5s ease; }
+    .project-info a.git:hover {
+      transform: scale(1.1); }
+  .project-info:hover {
+    background: rgba(0, 102, 193, 0.9); }
+    .project-info:hover h1 {
+      color: white; }
+    .project-info:hover p {
+      color: white; }
+    .project-info:hover a {
+      color: white;
+      border: 2px solid white; }
+    .project-info:hover a.git {
+      border: none; }
+
+#technologies hr {
+  width: 250px; }
+
+#technologies .row {
+  justify-content: space-around; }
+
+#technologies h2 {
+  text-align: center;
+  margin-bottom: 40px; }
+
+#technologies .learn {
+  justify-content: center; }
+  #technologies .learn img {
+    margin: 10px 50px; }
+
+#technologies img {
+  display: inline-block;
+  width: auto;
+  height: 180px;
+  object-fit: unset;
+  margin: 10px; }
+
+#about_me hr {
+  width: 190px; }
+
+#about_me .semi-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+#about_me .myDescription {
+  width: 40%;
+  margin-right: 150px;
+  font-size: 20px; }
+
+#about_me .myPhoto img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 5px solid #0066c1; }
+
+#contact h3 {
+  color: #2a2727; }
+
+#contact h3.call {
+  margin-top: 30px; }
+
+#contact span {
+  display: inline-block;
+  color: #0066c1;
+  font-size: 40px; }
+
+#contact .social {
+  float: right; }
+  #contact .social a {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none; }
+    #contact .social a:visited {
+      color: initial; }
+    #contact .social a i {
+      font-size: 80px;
+      transition: .5s ease; }
+    #contact .social a:hover i {
+      color: #0066c1; }
+    #contact .social a i.cv {
+      font-size: 70px;
+      position: relative;
+      top: -5px; }
+
+@keyframes breath {
+  0% {
+    color: white; }
+  50% {
+    color: #0066c1; }
+  100% {
+    color: white; } }
+
+@keyframes drop {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(0px); } }
+
+@media (max-width: 991px) {
+  .jumbotron h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 45px; }
+  #about_me .myDescription {
+    text-align: center;
+    margin-bottom: 60px;
+    width: 100%;
+    margin-right: 0px; }
+  #about_me .semi-row {
+    flex-direction: column; } }
+
+@media (max-width: 767px) {
+  section {
+    margin: 120px 0px; }
+  body h1 {
+    width: 100%;
+    text-align: center; }
+  body hr {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 300px; }
+  .jumbotron .nav-container .overlay ul {
+    margin-top: 20px; }
+  .jumbotron .nav-container .overlay .language {
+    right: 20px; }
+  #hamb-menu {
+    background: white;
+    box-shadow: 0 0 10px 10px white; }
+  #hamb-menu.active span {
+    background: #0066c1 !important; }
+  #projects .row {
+    margin-top: 40px; }
+  #projects .first-project {
+    margin-top: 0px; }
+  #projects .project-info {
+    background: rgba(0, 102, 193, 0.9); }
+    #projects .project-info h1 {
+      color: white; }
+    #projects .project-info p {
+      color: white; }
+    #projects .project-info a {
+      color: white;
+      border: 2px solid white; }
+    #projects .project-info a.git {
+      border: none; }
+  #about_me hr {
+    width: 300px; }
+  #about_me p {
+    padding: 30px; }
+  #about_me .semi-row {
+    flex-direction: column; }
+    #about_me .semi-row .myPhoto {
+      display: flex; }
+      #about_me .semi-row .myPhoto img {
+        flex: none;
+        align-self: center; }
+  #technologies hr {
+    width: 300px; }
+  #technologies img {
+    margin-bottom: 20px; }
+  #contact {
+    text-align: center;
+    margin-bottom: 100px; }
+    #contact span {
+      display: block;
+      margin: 20px 0; }
+    #contact .social {
+      margin-top: 40px;
+      float: none; } }
+
+@media (max-width: 575px) {
+  body h1 {
+    width: 100%;
+    text-align: center; }
+  .row {
+    flex-direction: column;
+    margin-bottom: 0px; }
+  #contact span {
+    font-size: 25px; }
+  #contact .social {
+    display: flex;
+    justify-content: center; } }
+
+/*# sourceMappingURL=style.css.map */
