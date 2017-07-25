@@ -41,7 +41,7 @@ hr {
   transition: width 2s ease; }
 
 .jumbotron {
-  background: url("https://static.pexels.com/photos/196254/pexels-photo-196254.jpeg");
+  background: url("https://static.pexels.com/photos/196659/pexels-photo-196659.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1900px;
@@ -128,7 +128,7 @@ hr {
     margin: 0 auto;
     bottom: 20px; }
     .jumbotron .scroll-down a i {
-      color: white;
+      color: #2a2727;
       text-decoration: none;
       font-size: 60px;
       animation: drop 3s infinite;
