@@ -12,7 +12,7 @@ button {
 header .jumbotron {
   font-family: 'Dosis', sans-serif;
   min-height: 100vh;
-  background: url("https://static.pexels.com/photos/497727/pexels-photo-497727.jpeg") 0/cover;
+  background: url("stars.jpg") 0/cover;
   padding: 0;
   text-align: center;
   margin: 0; }
@@ -60,7 +60,7 @@ header .jumbotron {
     color: white; }
 
 .jumbotron.first {
-  background: url("https://static.pexels.com/photos/200784/pexels-photo-200784.jpeg") 0/cover;
+  background: url("phone.jpeg") 0/cover;
   margin-bottom: 0; }
   .jumbotron.first .row {
     width: 100%; }
@@ -144,7 +144,7 @@ header .jumbotron {
 .form .jumbotron {
   font-family: 'Dosis', sans-serif;
   min-height: 100vh;
-  background: url("https://static.pexels.com/photos/169657/pexels-photo-169657.jpeg") 0/cover;
+  background: url("pen.jpeg") 0/cover;
   padding: 0;
   text-align: center;
   margin: 0;

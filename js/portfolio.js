@@ -2,19 +2,20 @@ AOS.init({
 	duration: 1200,
 });
 (function(){
-	var h1 = document.getElementsByTagName("h1");
-	var spans = document.getElementsByTagName("span");
-	var hamb = document.getElementById("hamb-menu");
-	var top = document.querySelector(".top");
-	var middle = document.querySelector(".middle");
-	var bottom = document.querySelector(".bottom");
-	var overlay = document.querySelector(".overlay");
-	var project = document.querySelectorAll(".projects");
-	var home = document.querySelector(".home");
-	var technologies = document.querySelector(".technologies");
-	var about = document.querySelector(".about");
-	var contact = document.querySelector(".contact");
-	var lang = document.querySelectorAll(".language img");
+	let h1 = document.getElementsByTagName("h1"),
+		spans = document.getElementsByTagName("span"),
+		hamb = document.getElementById("hamb-menu"),
+		top = document.querySelector(".top"),
+		middle = document.querySelector(".middle"),
+		bottom = document.querySelector(".bottom"),
+		overlay = document.querySelector(".overlay"),
+		project = document.querySelectorAll(".projects"),
+		home = document.querySelector(".home"),
+		technologies = document.querySelector(".technologies"),
+		about = document.querySelector(".about"),
+		contact = document.querySelector(".contact"),
+		lang = document.querySelectorAll(".language img");
+		
 	hamb.addEventListener("click", changeHamb);
 	project[0].addEventListener("click", function(){goTo("#projects", 500, "easeOutQuad");});
 	project[0].addEventListener("click", hideNav);
@@ -50,6 +51,7 @@ AOS.init({
 		spans[1].style.color= "rgba(255,255,255,1)";
 		spans[1].style.textShadow= "0 0 10px black";
 	}, 7000);
+
 	function changeHamb(){
 		if(hamb.className){
 			hamb.style.transform = "rotate(0deg)";
@@ -143,8 +145,7 @@ AOS.init({
 		var h3 = document.querySelectorAll("h3");
 		var p = document.querySelectorAll("p");
 		var a = document.querySelectorAll("nav ul li a");
-		if(this.id === "POL"){		
-			// h1[0].innerHTML = "<span class='span-one'>Kodowanie</span> to czynność w której lubię uczucie satysfakcji, gdy patrzę na końcowy <span class='span-two'>efekt</span>.";
+		if(this.id === "POL"){
 			h1[1].textContent = "Projekty";
 			h1[8].textContent = "Technologie";
 			h1[9].textContent = "O mnie";
@@ -159,7 +160,6 @@ AOS.init({
 			a[3].textContent = "O MNIE";
 			a[4].textContent = "KONTAKT";
 		}else{
-			// h1[0].innerHTML = "In <span class='span-one'>coding</span>, I like challenges and feeling of satisfaction, when I'm looking at the final <span class='span-two'>effect</span>.";
 			h1[1].textContent = "Projects";
 			h1[8].textContent = "Technologies";
 			h1[9].textContent = "About me";
