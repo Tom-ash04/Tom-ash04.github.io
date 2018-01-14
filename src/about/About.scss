@@ -1,0 +1,38 @@
+.about-items {
+  h1 {
+    color: #2a2727;
+  }
+  .aos-animate {
+    hr {
+      width: 250px;
+    }
+  }
+}
+.myDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  p {
+    text-align: justify;    
+    max-width: 460px;
+    margin-right: 50px;
+    font-size: 20px;
+  }
+  img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 50px 0;
+    border: 5px solid rgba(0, 102, 193, 1);
+  }
+}
+
+@media (max-width: 767px) {
+  .myDescription {
+    p {
+      margin: 0 20px;
+
+    }
+  }
+}
